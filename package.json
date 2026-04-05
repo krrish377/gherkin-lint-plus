@@ -1,6 +1,6 @@
 {
   "name": "gherkin-lint-plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gherkin linter (TypeScript, @cucumber/gherkin)",
   "license": "MIT",
   "type": "module",
@@ -16,7 +16,7 @@
     }
   },
   "bin": {
-    "gherkin-lint-new": "dist/main.js"
+    "gherkin-lint-plus": "dist/main.js"
   },
   "files": [
     "dist",

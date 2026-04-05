@@ -113,7 +113,7 @@ export async function runCli(argv: string[]): Promise<number> {
     const format = options.format;
     if (format === 'json' || format === 'xunit') {
       logger.boldError(
-        'Unsupported format. Only stylish is implemented in gherkin-lint-new for now.'
+        'Unsupported format. Only stylish is implemented in gherkin-lint-plus for now.'
       );
       return 1;
     }

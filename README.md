@@ -1,4 +1,4 @@
-# gherkin-lint-new
+# gherkin-lint-plus
 
 A **Gherkin** linter for `.feature` files, implemented in **TypeScript** and built on [@cucumber/gherkin](https://www.npmjs.com/package/@cucumber/gherkin). It aims to be a modern, maintainable take on the same idea as the original [gherkin-lint](https://www.npmjs.com/package/gherkin-lint) CLI.
 
@@ -7,13 +7,13 @@ A **Gherkin** linter for `.feature` files, implemented in **TypeScript** and bui
 ## Install
 
 ```bash
-npm install gherkin-lint-new
+npm install gherkin-lint-plus
 ```
 
 **From a git checkout (development):**
 
 ```bash
-cd gherkin-lint-new
+cd gherkin-lint-plus
 npm install
 npm run build
 ```
@@ -25,7 +25,7 @@ npm run build
 You need a config file in the **current working directory** unless you pass `-c` (see below).
 
 ```bash
-npx gherkin-lint-new [options] [files...]
+npx gherkin-lint-plus [options] [files...]
 ```
 
 - **No arguments:** lints all `**/*.feature` under `.`, respecting ignore rules.
