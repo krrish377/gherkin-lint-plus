@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/krrish377/gherkin-lint-plus#readme",
   "scripts": {
-   
+    "prebuild": "npm run test",
     "build": "tsc",
     "start": "node dist/main.js",
     "test": "vitest run",
