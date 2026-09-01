@@ -28,6 +28,9 @@ import { noUnnamedScenariosRule } from './no-unnamed-scenarios.js';
 import { noUnusedVariablesRule } from './no-unused-variables.js';
 import { oneSpaceBetweenTagsRule } from './one-space-between-tags.js';
 import { onlyOneWhenRule } from './only-one-when.js';
+import { noCommentsRule } from './no-comments.js';
+import { noDupeFeatureTagsRule } from './no-dupe-feature-tags.js';
+import { requiredFeatureTagsRule } from './required-feature-tags.js';
 import { requiredTagsRule } from './required-tags.js';
 import { scenarioSizeRule } from './scenario-size.js';
 import { useAndRule } from './use-and.js';
@@ -52,6 +55,8 @@ const builtIns: RuleDefinition[] = [
   noMultipleEmptyLinesRule,
   noPartiallyCommentedTagLinesRule,
   noRestrictedPatternsRule,
+  noCommentsRule,
+  noDupeFeatureTagsRule,
   noRestrictedTagsRule,
   noScenarioOutlinesWithoutExamplesRule,
   noSuperfluousTagsRule,
@@ -61,6 +66,7 @@ const builtIns: RuleDefinition[] = [
   noUnusedVariablesRule,
   oneSpaceBetweenTagsRule,
   onlyOneWhenRule,
+  requiredFeatureTagsRule,
   requiredTagsRule,
   scenarioSizeRule,
   useAndRule,

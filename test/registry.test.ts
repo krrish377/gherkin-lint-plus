@@ -6,7 +6,7 @@ describe('rule registry', () => {
     const rules = getBuiltInRules();
     const names = rules.map((r) => r.name);
     expect(new Set(names).size).toBe(names.length);
-    expect(rules.length).toBe(31);
+    expect(rules.length).toBe(34);
   });
 
   it('every rule exposes run and availableConfigs shape', () => {
