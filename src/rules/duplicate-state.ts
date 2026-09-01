@@ -7,9 +7,15 @@ export const duplicateScenarioNames: Record<
   { locations: { file: string; line: number }[] }
 > = Object.create(null);
 
+/** Cross-file state for `no-dupe-feature-tags` (reset once per `lint()` run). */
+export const duplicateFeatureTags: Record<string, { files: string[] }> = Object.create(null);
+
 export function resetDuplicateFeatureState(): void {
   for (const k of Object.keys(duplicateFeatureNames)) {
     delete duplicateFeatureNames[k];
+  }
+  for (const k of Object.keys(duplicateFeatureTags)) {
+    delete duplicateFeatureTags[k];
   }
 }
 
